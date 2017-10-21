@@ -1,12 +1,9 @@
 #include<iostream>
 #include<stdio.h>
+#include<algorithm>
 using namespace std;
 void qsort(int s[], int l, int r) {
-	if (r - l<2) {
-		if(r==l)return;
-		if (s[r]<s[l])swap(s[r], s[l]);
-		return;
-	}
+	if(r<=l)return;
 	int tmp, i=l-1,x=s[r];
 	for (int j = l; j < r; j++) {
 		if(s[j]>x)continue;

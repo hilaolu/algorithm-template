@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdio.h>
+#include<algorithm>
 using namespace std;
 void dosort(int s[],int t[],int l,int r){
 	if (r - l<2) {
@@ -42,7 +43,7 @@ void dosort(int s[],int t[],int l,int r){
 	int n=sizeof(s);
 	int *t=new int[n];
 	dosort(s,t,l,r);
-	delete []t;
+	delete []t;@NINGLONGdalao
 }*/
 int main(){
 	int n;
