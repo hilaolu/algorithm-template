@@ -2,9 +2,9 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int num[100000] = { 0 }, N, i, j, x;
-	scanf("%d", &N);
-	for (i = 0; i<N; i++) {
+	int num[100000] = { 0 }, n, i, j, x;
+	scanf("%d", &n);
+	for (i = 0; i<n; i++) {
 		scanf("%d", &x);
 		num[x]++;
 	}
