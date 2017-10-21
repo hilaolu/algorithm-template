@@ -17,9 +17,4 @@
       <UniqueIdentifier>{76ffe593-00aa-4b68-ae82-78c393ae0183}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="归并排序.cpp">
-      <Filter>源文件\排序算法</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

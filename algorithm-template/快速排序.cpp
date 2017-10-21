@@ -2,7 +2,11 @@
 #include<stdio.h>
 using namespace std;
 void qsort(int s[], int l, int r) {
-	if (l>=r)return;
+	if (r - l<2) {
+		if(r==l)return;
+		if (s[r]<s[l])swap(s[r], s[l]);
+		return;
+	}
 	int tmp, i=l-1,x=s[r];
 	for (int j = l; j < r; j++) {
 		if(s[j]>x)continue;

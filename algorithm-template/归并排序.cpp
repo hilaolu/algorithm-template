@@ -3,6 +3,7 @@
 using namespace std;
 void dosort(int s[],int t[],int l,int r){
 	if (r - l<2) {
+		if (r==l)return;
 		if (s[r]<s[l])swap(s[r], s[l]);
 		return;
 	}
