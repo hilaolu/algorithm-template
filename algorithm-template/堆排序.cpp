@@ -28,18 +28,18 @@ void heapdown(int s[],int i,int n){
 			i=r;
 			continue;
 		}
-		for(int j=0;j<n;j++)cout<<s[j]<<" ";
-		cout<<endl;
+		break;
 	}
 }
 void heapsort(int s[],int n){
-	int tmp;
-	for(int i=(n+1)/2+1;i>0;i--)heapdown(s,i,n);
-	for(int i=n-1;i>0;i--){
+	int tmp,k=n;
+	for(int i=(n+1)/2;i>=0;i--)heapdown(s,i,n);
+	while(k>0){
 		tmp=s[0];
-		s[0]=s[i];
-		s[i]=tmp;
-		heapdown(s,0,i);
+		s[0]=s[k];
+		s[k]=tmp;
+		k--;
+		heapdown(s,0,k);
 	}
 }
 int main(){
